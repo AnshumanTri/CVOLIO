@@ -908,7 +908,7 @@ button:hover {
 
 .home {
   height: 100%;
-  background:#0C2D48;
+  background:#0c2d48e9;
   color: #B1D4E0;
   display: flex;
   align-items: center;
@@ -1628,4 +1628,136 @@ background: linear-gradient(90deg, rgba(12,45,72,0.7008053221288515) 0%, rgba(17
   font-size: 48px;
   margin: 30px;
   color: black;
+}
+
+.site-title {
+  color: wheat;
+  padding-bottom: 20px;
+}
+
+.home {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+  position: relative;
+}
+
+.home h1 {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+/* Floating Circles */
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: float 1.5s ease-in-out infinite; /* Faster animation */
+}
+
+.floating-circle:nth-child(1) {
+  width: 15px; height: 15px; top: 5%; left: 5%; animation-duration: 1.2s;
+}
+.floating-circle:nth-child(2) {
+  width: 10px; height: 10px; top: 90%; left: 15%; animation-duration: 1.4s;
+}
+.floating-circle:nth-child(3) {
+  width: 12px; height: 12px; top: 20%; left: 85%; animation-duration: 1.3s;
+}
+.floating-circle:nth-child(4) {
+  width: 10px; height: 10px; top: 75%; left: 70%; animation-duration: 1.6s;
+}
+.floating-circle:nth-child(5) {
+  width: 15px; height: 15px; top: 40%; left: 30%; animation-duration: 1.5s;
+}
+
+/* Floating Lines */
+.floating-line {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: float 2s ease-in-out infinite;
+}
+
+.floating-line:nth-child(6) {
+  top: 10%; left: 90%; animation-duration: 1.8s;
+}
+.floating-line:nth-child(7) {
+  top: 60%; left: 10%; animation-duration: 2.1s;
+}
+.floating-line:nth-child(8) {
+  top: 85%; left: 40%; animation-duration: 2.3s;
+}
+
+/* Floating Rectangles */
+.floating-rectangle {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.floating-rectangle:nth-child(9) {
+  top: 20%; left: 20%; animation-duration: 2.2s;
+}
+.floating-rectangle:nth-child(10) {
+  top: 70%; left: 75%; animation-duration: 1.9s;
+}
+
+/* Floating Triangles */
+.floating-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid rgba(255, 255, 255, 0.5);
+  animation: float 1.8s ease-in-out infinite;
+}
+
+.floating-triangle:nth-child(11) {
+  top: 50%; left: 5%; animation-duration: 1.5s;
+}
+.floating-triangle:nth-child(12) {
+  top: 80%; left: 85%; animation-duration: 1.7s;
+}
+
+/* Floating Polygons (hexagons) */
+.floating-polygon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgba(255, 255, 255, 0.5);
+  animation: float 1.5s ease-in-out infinite;
+}
+
+.floating-polygon:nth-child(13) {
+  top: 15%; left: 70%; animation-duration: 1.4s;
+}
+.floating-polygon:nth-child(14) {
+  top: 60%; left: 30%; animation-duration: 1.6s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* More pronounced upward movement */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

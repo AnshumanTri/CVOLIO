@@ -4,14 +4,33 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className='home'>
-        <div className="home-heading">
-        <div class="name">
-            <h2>CVolio</h2>
+      <div className="floating-circle"></div>
+      <div className="floating-circle"></div>
+      <div className="floating-circle"></div>
+      <div className="floating-circle"></div>
+      <div className="floating-circle"></div>
+
+      <div className="floating-line"></div>
+      <div className="floating-line"></div>
+      <div className="floating-line"></div>
+
+      <div className="floating-rectangle"></div>
+      <div className="floating-rectangle"></div>
+
+      <div className="floating-triangle"></div>
+      <div className="floating-triangle"></div>
+
+      <div className="floating-polygon"></div>
+      <div className="floating-polygon"></div>
+
+      <div className="home-heading">
+        <div className="name">
+          <h2>CVolio</h2>
         </div>
-        <h1 class="site-title">Create / Customize / Showcase</h1>
-        <h2 class="site-title2"> Your Future, Your Portfolio</h2>
-        </div>
-      
+        <h1 className="site-title">Create / Customize / Showcase</h1>
+        <h2 className="site-title2">Your Future, Your Portfolio</h2>
+      </div>
+
       <div className='home-options'>
         <div className="home-btns">
           <div>
@@ -37,11 +56,11 @@ function Home() {
                 customization.
               </p>
               <Link to='/cv-templates'>
-              <button className="home-btn">CV Generator</button>
-            </Link>
+                <button className="home-btn">CV Generator</button>
+              </Link>
             </div>
             <div className='home-card'>
-              <h3>Portfolio Builder</h3> <br/>
+              <h3>Portfolio Builder</h3>
               <p>Design an eye-catching portfolio to showcase your work.</p>
               <Link to='/portfolio-templates'>
                 <button className="home-btn">Portfolio Generator</button>
